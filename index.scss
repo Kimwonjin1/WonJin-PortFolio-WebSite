@@ -1,0 +1,66 @@
+@import "./utils/wave/wave.scss";
+@import "./utils/button/NeonButton/NavButton.scss";
+@import "./utils/main-img/main-img.scss";
+@import "./utils/main-img-sub/main-img-sub.scss";
+@import "./utils/bg-ef/bg-ef.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-back {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  .right-img {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    text-align: right;
+    right: 5vw;
+    bottom: 30vh;
+    color: white;
+    font-size: 3rem;
+    z-index: 2;
+  }
+}
+
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+
+  .logo-container {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    flex: 1;
+    .logo-sub {
+      font-size: 0.3em;
+      margin-left: 1em;
+    }
+  }
+
+  nav {
+    .nav-links {
+      justify-content: space-around;
+      list-style: none;
+      align-items: center;
+      display: flex;
+      flex: 1;
+    }
+  }
+  .card {
+    z-index: 1;
+    .imgBox {
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}
