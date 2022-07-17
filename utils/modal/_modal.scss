@@ -1,0 +1,110 @@
+
+
+  .modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: modal-open 0.5s;
+    @keyframes modal-open {
+      0%{
+        opacity: 0;
+      }100%{
+        opacity: 1;
+      }
+    }
+    .modal-container {
+      display: flex;
+      background: #fff;
+      position: absolute;
+      max-width: 1000px;
+      max-height: 700px;
+      width: 70%;
+      height: 70%;
+      box-shadow: 0 15px 30px rgba($color: #000000, $alpha: 0.08);
+      transition: 0.5s;
+    .modal-video {
+      width: 50%;
+      background-color: wheat;
+      height: auto;
+      min-width: 400px;
+      video{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .modal-content {
+      width: 50%;
+      padding: 5%;
+      background-color: white;
+      height: 100%;
+      .modal-title{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 10px;
+      }
+      .modal-des{
+        margin: 10px;
+        font-size: 20px;
+      }
+      .skill-title{
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        margin: 20px;
+      }
+      .use-skill{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        
+        img{
+          width: 70px;
+          margin: 20px;
+          height: 70px;
+        }
+      }
+      .modal-git{
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        margin: 10px;
+        font-size: 20px;
+
+      }
+      .website{
+        position: absolute;
+        right: 5%;
+        bottom: 17%;
+        margin: 10px;
+        font-size: 20px;
+      }
+   
+    }
+    .close{
+      position: absolute;
+      cursor: pointer;
+      top: 30px;
+      right: 30px;
+    }
+ 
+  }
+
+}
+@media (max-width: 1300px){
+  .modal{
+    .modal-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 700px;
+      max-height: 500px;
+    }
+
+  }
+}

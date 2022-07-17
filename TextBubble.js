@@ -2,9 +2,9 @@ const canvas = document.querySelector('.bubble')
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let particleArray = [];
-let adjustX = 10;
-let adjustY = 0;
-
+let adjustX = 5;
+let adjustY = 6;
+    
 const ctx = canvas.getContext('2d');
 
 const mouse =  {
@@ -14,9 +14,8 @@ const mouse =  {
 }
 
 window.addEventListener('mousemove', function(e){
-    mouse.x = e.x
-    mouse.y = e.y -70;
-    
+    mouse.x = e.x ;
+    mouse.y = e.y ;
 } ) 
     ctx.fillStyle = 'white';
     ctx.font = '30px Verdana';
@@ -137,14 +136,28 @@ window.addEventListener('resize', function() {
                     // y * 4는 1픽셀당 rgb값이 4여서 거기다 실제 100 곱하기 128은 불투명도 
                     let postionX = x + adjustX;
                     let postionY = y + adjustY; 
-                if(canvas.width < 400){
-                    particleArray.push(new Particle(postionX * 7, postionY * 7));
-                }else if(canvas.width > 1700){ 
-                    particleArray.push(new Particle(postionX * 17, postionY * 17));
+                if(canvas.width < 1135){
+                    particleArray.push(new Particle(postionX * 13, postionY * 9));
+                   
+                    adjustY = 11
+                    if(canvas.width > 400){
+                        adjustX = 22
+                       --adjustX 
+                    }
+                  
+                }else if(canvas.width < 1330){ 
+                    particleArray.push(new Particle(postionX * 12, postionY * 12));
+                    adjustY = 22
+                    //픽셀의 크기를 지정함                
+                }else if(canvas.width < 1580){ 
+                    particleArray.push(new Particle(postionX * 15, postionY * 15));
+                    adjustY = 14
                     //픽셀의 크기를 지정함
-                }else { 
-                    particleArray.push(new Particle(postionX * 14, postionY * 14));
-                    //픽셀의 크기를 지정함
+                }else{ 
+                    particleArray.push(new Particle(postionX * 20, postionY * 20));
+                    adjustX = 7
+                    adjustY = 5
+                    //픽셀의 크기를 지정함 
                 }
                 }
             }

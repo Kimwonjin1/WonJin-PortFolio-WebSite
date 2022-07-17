@@ -4,38 +4,164 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/Portfolio.css" />
+    <link rel="stylesheet" href="./Portfolio.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
+   
+    <div class="portfolio-container">
+      <header>
+        <nav>
+        <div class="logo">WJ<div class="logo-sub">WonJin</br>full stack</br>developer</div></div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="/index.html">HOME</a></li>
+          <li class="nav-link"><a href="/htmlFolder/AboutMe/AboutMe.html">ABOUT ME</a></li>
+        </ul>
+        <div class="nav-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+      <div class="card-container">
+      <div class="card" data-modal="modal1">
         <a href="#">
           <div class="imgBx">
-            <img src="/utils/CardEffect/svg/shopping-cart.svg" />
+            <img src="/img/shopping-cart.svg" />
             <h3>Shoping Shop</h3>
           </div>
         </a>
-        <div class="content">쇼핑사이트</div>
+        <div class="content"><img src="/img/jeomsim.png" alt=""></div>
+        
       </div>
-      <div class="card">
+
+      <div class="card" data-modal="modal2">
         <a href="#">
           <div class="imgBx">
-            <img src="/utils/CardEffect/svg/video.svg" />
+            <img src="/img/coin.png" />
+            <h3>Refund Agent</h3>
+          </div>
+        </a>
+        <div class="content"><img src="/img/coin-img.png" alt=""></div>
+      </div>
+      <div class="card" data-modal="modal3">
+        <a href="#">
+          <div class="imgBx">
+            <img src="/img/food.png" />
+            <h3>음식 검색 사이트</h3>
+          </div>
+        </a>
+        <div class="content"><img src="/img/Pfood.png" alt=""></div>
+      </div>
+      <div class="card" data-modal="modal4">
+        <a href="#">
+          <div class="imgBx">
+            <img src="/img/video.svg" />
             <h3>Movie</h3>
           </div>
         </a>
-        <div class="content">영화 리뷰 사이트</div>
+        <div class="content">영화 사이트</div>
       </div>
-      <div class="card">
+      <div class="card" data-modal="modal5">
         <a href="#">
           <div class="imgBx">
-            <img src="/utils/CardEffect/svg/robotic.svg" />
-            <h3>Chatbot</h3>
+            <img src="/img/social.png"/>
+            <h3>social media</h3>
           </div>
         </a>
-        <div class="content">채팅봇</div>
+        <div class="content">소셜 사이트</div>
+      </div>
+      <div class="card" data-modal="modal6">
+        <a href="#">
+          <div class="imgBx">
+            <img src="/img/football.png" />
+            <h3>FootBall</h3>
+          </div>
+        </a>
+        <div class="content">축구 사이트</div>
       </div>
     </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-container">
+      <div class="modal-video"><video src=""></video></div>
+      <div class="modal-content">
+        <div class="modal-title">sdsdsd</div>
+        <div class="modal-des"></div>
+        <div class="modal-git"></div>
+      </div>
+      <div class="close">X</div>
+      </div>
+      </div>
+    <div id="modal2" class="modal">
+      <div class="modal-container">
+
+      <div class="modal-video"><video src=""></video></div>
+      <div class="modal-content">
+        <div class="modal-title"></div>
+        <div class="modal-des"></div>
+        <div class="modal-git"></div>
+      </div>
+      <div class="close">X</div>
+    </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-container">
+
+      <div class="modal-video"><video muted controls loop><source src="/video/Food.mp4" type="video/webm"></video></div>
+      <div class="modal-content">
+        <div class="modal-title">음식검색 사이트</div>
+        <div class="modal-des">themealdb api 활용하여 기본적인 음식에 대한 이미지 사이트</div>
+        <div class="skill-title">Use Skill</div>
+        <div class="use-skill"><img src="/img/html-css.png" alt=""><img src="/img/javascript.png" alt=""></div>
+        <div class="modal-git">GitHub : <a href="https://github.com/Kimwonjin1/Food-Search-website">kimwonjin1.github.io</a></div>
+        <div class="website">Webstie : <a href="https://kimwonjin1.github.io/Food-Search-website">Food-Search-website</a></div>
+       
+      </div>
+      <div class="close">X</div>
+    </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="modal-container">
+
+      <div class="modal-video"><video src=""></video></div>
+      <div class="modal-content">
+        <div class="modal-title"></div>
+        <div class="modal-des"></div>
+        <div class="modal-git"></div>
+      </div>
+      <div class="close">X</div>
+    </div>
+    </div>
+    <div id="modal5" class="modal">
+      <div class="modal-container">
+
+      <div class="modal-video"><video src=""></video></div>
+      <div class="modal-content">
+        <div class="modal-title"></div>
+        <div class="modal-des"></div>
+        <div class="modal-git"></div>
+      </div>
+      <div class="close">X</div>
+    </div>
+    </div>
+    <div id="modal6" class="modal">
+      <div class="modal-container">
+
+      <div class="modal-video"><video src=""></video></div>
+      <div class="modal-content">
+        <div class="modal-title"></div>
+        <div class="modal-des"></div>
+        <div class="modal-git"></div>
+      </div>
+      <div class="close">X</div>
+    </div>
+    </div>
+    </div>
+      
+
   </body>
+  <script src="/utils/navigationM/navigationM.js"></script>
+  <script defer src="./Portfolio.js"></script>
 </html>
