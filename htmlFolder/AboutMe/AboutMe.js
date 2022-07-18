@@ -1,3 +1,5 @@
+
+
 var careerB = document.querySelector(".career-items").children;
 var careerSC = document.querySelector(".circles").children;
 var careerCH = document.querySelector(".career-char img");
