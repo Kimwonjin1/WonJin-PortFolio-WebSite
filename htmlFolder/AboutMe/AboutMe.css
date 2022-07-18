@@ -378,7 +378,7 @@ header nav .nav-links {
   color: white;
   background-size: cover;
   z-index: -1;
-  background: linear-gradient(0deg, #000000 0%, white 59%), url(../img/syber.jpg);
+  background: linear-gradient(0deg, #000000 0%, white 59%), url(./img/syber.jpg);
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
 }
